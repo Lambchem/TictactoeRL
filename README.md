@@ -1,4 +1,4 @@
-# Tic-Tac-Toe Reinforcement Learning (God-Mode AI)
+# Tic-Tac-Toe Reinforcement Learning
 
 本项目实现了一个基于 **强化学习 (Q-Learning)** 的井字棋 AI。通过数万轮的自我对弈（Self-play），该 AI 已完全掌握井字棋的最优博弈策略，达到了“上帝视角”：在完美对弈下永不落败，并能精准捕捉对手的任何微小失误。
 
@@ -68,7 +68,7 @@ $$Q(s, a) \leftarrow Q(s, a) + \alpha [r + \gamma (\text{Opponent's Worst Case})
 - **好处**：学习速度提升 8 倍，且保证了 AI 在面对棋盘不同方位时的表现绝对一致。
 
 ### 胜率映射
-��� Q 值线性映射至 $[0, 1]$ 区间，用于预测胜率：
+Q 值线性映射至 $[0, 1]$ 区间，用于预测胜率：
 - `0.5`：理论平局
 - `1.0`：己方必胜
 - `0.0`：己方必败
